@@ -1,0 +1,680 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --moderate-cyan: hsl(176, 50%, 47%);
+    --dark-cyan: hsl(176, 72%, 28%);
+    --black: hsl(0, 0%, 0%);
+    --dark-gray: hsl(0, 0%, 48%);
+    --white-color: #fff;
+    --light-grey: #d3d3d3;
+    --background-color: #f2f2f2;
+}
+
+html, body{
+    font-family: 'Commissioner';
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: var(--background-color);
+}
+
+a{
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+#background{
+    background-position: center;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),url(/images/image-hero-desktop.jpg);
+    height: 40vh;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 5rem;
+}
+
+.navLinks ul li{
+    list-style: none;
+    padding: 0 1rem;
+}
+
+.navLinks ul{
+    display: flex;
+}
+
+.navLinks i{
+    color: var(--white-color);
+    display: none;
+}
+
+#topSection{
+    background-color: var(--white-color);
+    padding: 3rem;
+    margin: -5rem auto 0;
+    width: 48%;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid var(--light-grey);
+}
+
+.masterCraft{
+    position: absolute;
+    top: 7.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#topSection .topText p{
+    margin: 1rem 0 3rem;
+    color: var(--dark-gray);
+}
+
+.twoButtons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.twoButtons a{
+    background-color: var(--moderate-cyan);
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: 700;
+}
+
+.twoButtons .bookmark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--grey-color);
+    padding: 0 16px 0 0;
+    border-radius: 50px;
+    background-color: var(--light-grey);
+}
+
+.twoButtons .bookmark i{
+    color: var(--white-color);
+    background-color: var(--black);
+    padding: 12px;
+    margin-right: 5px;
+    border-radius: 50%;
+}
+
+.bgLine{
+    background-color: var(--light-grey);
+    width: 100%;
+    margin: 0.5rem auto;
+    border-radius: 50px;
+    margin-top: 4rem;
+}
+
+.topLine{
+    padding: 5.5px;
+    background-color: var(--moderate-cyan);
+    width: 80%;
+    border-radius: 50px;
+}
+
+#threecolumnSection{
+        background-color: var(--white-color);
+        padding: 3rem;
+        margin: 1rem auto 0;
+        width: 48%;
+        border-radius: 5px;
+        /* text-align: center; */
+        border: 1px solid var(--light-grey);
+
+}
+
+.threecolumnClass{
+        display: flex;
+        margin: 0.5rem auto 10px;
+        line-height: 1.8rem;
+}
+
+.threecolumnSection p{
+    font-size: 14.5px;
+    color: var(--dark-gray);
+}
+
+.firstMoney{
+    flex: 1;
+}
+
+.secondMoney{
+    flex: 1;
+    text-align: justify;
+}
+
+.thirdMoney{
+    flex: 1;
+    text-align: justify;
+}
+
+.top{
+    width: 48%;
+    line-height: 1.8rem;
+    background-color: var(--white-color);
+    padding: 3rem;
+    margin: 1rem auto 0;
+    border-radius: 5px;
+    border: 1px solid var(--light-grey);
+    text-align: left;
+}
+
+
+.top .about{
+    margin: 2rem 0.5rem;
+    margin-bottom: 0;
+}
+
+.top .mastercraft{
+    margin: 4rem 0.5rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.top .featuring{
+    margin: 1rem 0.5rem;
+}
+
+.line{
+    padding: 2.5rem 0.5px;
+    margin: 0 1rem;
+    background-color: var(--dark-gray);
+}
+
+.bamboo{
+    padding: 2rem;
+    padding-bottom: 1rem;
+    margin: .5rem 0.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--light-grey);
+}
+
+.bambooclass{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bamboo .text{
+    padding-top: 2rem;
+
+}
+
+.bamboo .pledge{
+    color: var(--moderate-cyan);
+}
+
+.numberbutton{
+    padding: 2rem;
+    margin: 1.5rem 0.5rem;
+}
+
+.number{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.numberbutton .Select{
+    display: flex;
+    align-items: center;
+    padding: 12px 30px;
+    border-radius: 50px;
+    background-color: var(--moderate-cyan);
+    font-weight: 700;
+}
+
+.numberbutton .number span{
+    font-size: 15px;
+    color: var(--dark-gray);
+}
+
+.black{
+    padding: 2rem;
+    padding-bottom: 1rem;
+    margin: 1rem 0.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--light-grey);
+}
+
+.blackclass{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.black .text{
+    padding-top: 2rem;
+
+}
+
+.black .Bpledge{
+    color: var(--moderate-cyan);
+}
+
+.Bnumberbutton .Bnumber{
+    padding: 2rem;
+    margin: 1.5rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Bnumberbutton .Select{
+    display: flex;
+    align-items: center;
+    padding: 12px 30px;
+    border-radius: 50px;
+    background-color: var(--moderate-cyan);
+    font-weight: 700;
+}
+
+.Bnumberbutton .Bnumber span{
+    /* font-size: 14rem; */
+    color: var(--dark-gray);
+}
+
+.Mahogany{
+    padding: 2rem;
+    margin: .5rem 0.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--light-grey);
+    color: var(--light-grey);
+}
+
+.Mahoganyclass{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--dark-gray);
+}
+
+.Mahogany .text{
+    padding-top: 2rem;
+
+}
+
+.Mahogany .Mpledge{
+    color: var(--dark-gray);
+}
+
+.Mnumberbutton .Mnumber{
+    padding: 2rem;
+    margin: 1.5rem 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--dark-gray);
+}
+
+.Mnumberbutton .Select{
+    display: flex;
+    align-items: center;
+    padding: 12px 30px;
+    border-radius: 50px;
+    background-color: var(--dark-gray);
+    font-weight: 700;
+}
+
+.Mnumberbutton .Mnumber span{
+    font-size: 11px;
+    color: var(--dark-gray);
+}
+
+@media screen and (max-width:992px) {
+
+    .twoButtons .bookmark{
+        padding: 0;
+    }
+
+    .twoButtons .bookmark p{
+        display: none;
+    }
+
+    .twoButtons .bookmark i{
+        margin-right: 0;
+    }
+    .threecolumnClass{
+        flex-direction: column;
+        
+    }
+
+    .threecolumnClass .firstMoney, .threecolumnClass .secondMoney, .threecolumnClass .thirdMoney{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .numberbutton{
+        padding: 2rem;
+        margin: 1.5rem 0.5rem;
+        width: 90%;
+    }
+    
+    .number{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .numberbutton .Select{
+        display: flex;
+        align-items: center;
+        padding: 12px 30px;
+        border-radius: 50px;
+        background-color: var(--moderate-cyan);
+        font-weight: 700;
+    }
+    
+    .numberbutton .number span{
+        font-size: 11px;
+        color: var(--dark-gray) var(--dark-gray);
+    }
+    .line{
+        width: 30%;
+        padding: 0.5px;
+        margin: 1rem auto;
+        background-color: var(--dark-gray);
+    }
+}
+
+
+@media screen and (max-width:768px) {
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .navLinks i{
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    .navbar .navItems{
+        position: absolute;
+        height: 100vh;
+        width: 40%;
+        background: var(--dark-cyan);
+        right: -300px;
+        top: 0;
+        z-index: 1;
+        transition: 0.5s;
+        display: block;
+    }
+
+    .navbar .navItems li{
+        padding: 1rem;
+    }
+
+    .navbar .navItems i{
+        margin: 10px;
+    }
+
+    #topSection{
+        width: 90%;
+    }
+
+    #topSection .topText p{
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 1.5rem;
+    }
+
+    #threecolumnSection{
+        width: 90%;
+        display: block;
+        
+    }
+
+    .threecolumnClass{
+        flex-direction: column;
+        
+    }
+
+    .threecolumnClass .firstMoney, .threecolumnClass .secondMoney, .threecolumnClass .thirdMoney{
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+    .bgLine{
+        background-color: var(--light-grey);
+        width: 100%;
+        margin: 0.5rem auto;
+        border-radius: 50px;
+    }
+    
+    .topLine{
+        padding: 4px;
+        background-color: var(--moderate-cyan);
+        width: 70%;
+        border-radius: 50px;
+    }
+    .top{
+        width: 90%;
+        line-height: 1.8rem;
+        background-color: var(--white-color);
+        padding: 3rem;
+        margin: 0.5rem auto 0;
+        border-radius: 5px;
+        border: 1px solid var(--light-grey);
+        text-align: left;
+    }
+    
+    .line{
+        width: 30%;
+        margin: 1rem auto;
+        background-color: var(--dark-gray);
+    }
+
+    .top .about{
+        margin: 2rem 0.5rem;
+        margin-bottom: 0;
+    }
+    
+    .top .mastercraft{
+        margin: 4rem 0.5rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .top .featuring{
+        margin: 1rem 0.5rem;
+    }
+    
+    .bamboo{
+        padding: 2rem;
+        margin: 1.5rem 0.5rem;
+        border-radius: 5px;
+        border: 1px solid var(--light-grey);
+    }
+    
+    .bambooclass{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .bamboo .text{
+        padding-top: 2rem;
+    
+    }
+    
+    .bamboo .pledge{
+        color: var(--moderate-cyan);
+    }
+    
+    .numberbutton{
+        padding: 2rem;
+        margin: 1.5rem 0.5rem;
+    }
+    
+    .number{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .numberbutton .Select{
+        display: flex;
+        align-items: center;
+        padding: 12px 30px;
+        border-radius: 50px;
+        background-color: var(--moderate-cyan);
+        font-weight: 700;
+    }
+    
+    .numberbutton .number span{
+        font-size: 11px;
+        color: var(--dark-gray);
+    }
+    
+    .masterCraft{
+        position: absolute;
+        top: 16%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+@media screen and (max-width:375px){
+
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .top{
+        width: 90%;
+        line-height: 1.8rem;
+        background-color: var(--white-color);
+        padding: 2rem;
+        margin: 1rem auto 0;
+        border-radius: 5px;
+        border: 1px solid var(--light-grey);
+        text-align: left;
+    }
+    
+    
+    .top .about{
+        margin: 0.5rem 0.5rem;
+        margin-bottom: 0;
+    }
+    
+    .top .mastercraft{
+        margin: 4rem 0.5rem;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+    
+    .top .featuring{
+        margin: 1rem 0.5rem;
+    }
+    
+    .bamboo{
+        padding: 1rem 1rem;
+        padding-bottom: 0.01rem;
+        margin: 1.5rem 0.5rem;
+        border-radius: 7px;
+        border: 1px solid var(--light-grey);
+    }
+    
+    .bambooclass{
+        justify-content: space-between;
+        align-items: center;
+        display: block;
+    }
+     
+    
+    .numberbutton{
+        padding: 2rem 0.5rem;
+        margin: 1rem .10rem;
+    }
+    
+    .number{
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .numberbutton .Select{
+        padding: 2px 29px;
+        border-radius: 50px;
+        background-color: var(--moderate-cyan);
+    }
+    
+    
+    .blackclass{
+        justify-content: space-between;
+        display: block;
+    }
+
+    .black{
+        padding: 1rem 1rem;
+        padding-bottom: 0.01rem;
+        margin: 1.5rem 0.5rem;
+        border-radius: 7px;
+        border: 1px solid var(--light-grey);
+    }
+    
+    .Bnumberbutton .Bnumber{
+        padding: 2rem -0.3rem;
+        margin: 1rem 0.10rem;
+        display: block;
+    }
+    
+    .Bnumberbutton .Select{
+        padding: 2px 17px;
+        border-radius: 50px;
+    }
+    
+    .Bnumberbutton .Bnumber span{
+        color: var(--dark-gray);
+    }
+
+    .Mahogany{
+        padding: 1rem 1rem;
+        padding-bottom: 0.01rem;
+        margin: 1.5rem 0.5rem;
+        border-radius: 7px;
+        border: 1px solid var(--light-grey);
+    }
+    
+    .Mahoganyclass{
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        color: var(--dark-gray);
+    }
+
+    .Mahogany .Mpledge{
+        color: var(--dark-gray);
+    }
+    
+    .Mnumberbutton .Mnumber{
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+    }
+    
+    .Mnumberbutton .Select{
+        padding: 3px 22px;
+        border-radius: 50px;
+    }
+}
