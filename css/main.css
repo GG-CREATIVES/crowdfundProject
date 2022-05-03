@@ -521,10 +521,8 @@ a{
         margin: 1.5rem 0.5rem;
     }
     
-    .number{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .number, .Bnumber, .Mnumber{
+        flex-direction: column;
     }
     
     .numberbutton .Select{
